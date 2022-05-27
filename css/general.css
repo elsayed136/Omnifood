@@ -12,13 +12,14 @@ Bold: 700
 - line heights
 Default: 1
 Small: 1.05
+Medium: 1.2
 Paragraph default: 1.6
 
 - Letter spacing
 -0.5px
 0.75px
 
---- 01 COLORS
+--- 02 COLORS
 
 - Primary: #e67e22
 - Tints: 
@@ -33,8 +34,12 @@ Paragraph default: 1.6
 
 --- 05 SHADOWS
 
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
 --- 06 BORDER-RADIUS
+
 Default: 9px
+Medium: 11px
 
 --- 07 WHITESPACE
 
@@ -184,6 +189,22 @@ body {
   /* border: 3px solid #fff; */
   /* Trick */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
 }
 
 /* HELPER/SETTINGS CLASSES */
