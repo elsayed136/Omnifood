@@ -29,6 +29,7 @@ Paragraph default: 1.6
 - Shades: #cf711f
 - Accents: 
 - Grays
+#6f6f6f (lightest grey allowed on #fdf2e9)
 #555
 #333
 
@@ -205,6 +206,26 @@ body {
 .link:active {
   color: #cf711f;
   border-bottom: 1px solid transparent;
+}
+
+.list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  font-size: 3rem;
+  color: #e67e22;
 }
 
 /* HELPER/SETTINGS CLASSES */
